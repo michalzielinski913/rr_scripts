@@ -14,7 +14,7 @@ def click_button(driver: webdriver):
 
 def login(username, password, driver):
     driver.get("https://rivalregions.com")
-
+    time.sleep(3)
     mail_field = driver.find_element("name", "mail")
     mail_field.send_keys(username)
     time.sleep(1)
